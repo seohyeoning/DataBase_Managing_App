@@ -73,6 +73,8 @@ python main.py
 ---
 ## Screenshots 
 ### Home Screen
+![Image Description](./Image/dbhome.png)
+
 <img src="library_db_manager/main/Image/dbhome.PNG" height="100" width="100">
 ### Insert Operation
 <img src="Image/dbinsert.png" height="100" width="100">
