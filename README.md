@@ -73,12 +73,10 @@ python main.py
 ---
 ## Screenshots 
 ### Home Screen
-![Image Description](./Image/dbhome.png)
-
-<img src="library_db_manager/main/Image/dbhome.PNG" height="100" width="100">
+<img src="https://github.com/seohyeoning/library_db_manager/main/Image/dbhome.PNG" width="300" height="300"/>
 ### Insert Operation
-<img src="Image/dbinsert.png" height="100" width="100">
+<img src="https://github.com/seohyeoning/library_db_manager/main/Image/dbinsert.PNG" width="300" height="500"/>
 ### Update Operation
-<img src="Image/dbupdate.png" height="100" width="100">
+<img src="https://github.com/seohyeoning/library_db_manager/main/Image/dbupdate.PNG" width="300" height="500"/>
 ### Delete Operation
-<img src="Image/dbdelete.png" height="100" width="100">
+<img src="https://github.com/seohyeoning/library_db_manager/main/Image/dbdelete.PNG" width="300" height="500"/>
