@@ -1,0 +1,167 @@
+<MyApp>:
+    BoxLayout:
+        orientation: 'vertical'
+        spacing: 10
+        padding: 10
+
+        # Toolbar 역할
+        BoxLayout:
+            size_hint_y: None
+            height: dp(50)
+            padding: 5
+            canvas.before:
+                Color:
+                    rgba: 0.1, 0.5, 0.8, 1
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+            Label:
+                text: "Library DB Manager"
+                font_size: '20sp'
+                color: 1, 1, 1, 1
+                halign: 'center'
+
+        # Main Action Buttons
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: None
+            height: dp(50)
+            spacing: 10
+
+            Button:
+                text: 'Load Data'
+                on_release: root.load_data()
+            Button:
+                text: 'Clear'
+                on_release: root.clear_data()
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: None
+            height: dp(50)
+            spacing: 10
+
+            Button:
+                text: 'Insert'
+                on_release: root.toggle_hidden_input_box('insert')
+            Button:
+                text: 'Update'
+                on_release: root.toggle_hidden_input_box('update')
+            Button:
+                text: 'Delete'
+                on_release: root.toggle_hidden_input_box('delete')
+
+
+        # Hidden Input Box
+        BoxLayout:
+            id: hidden_input_box
+            orientation: 'vertical'
+            size_hint_y: None  # 부모 레이아웃에서 높이를 명시적으로 설정
+            height: 0          # 초기 상태에서 숨김
+            opacity: 0
+            spacing: 10
+
+            Label:
+                id: hidden_label
+                text: "Action Input"
+                font_size: '16sp'
+                size_hint_y: None
+                height: dp(30)
+
+            GridLayout:
+                cols: 2
+                id: primary_key_input
+                Label:
+                    size_hint_x: 0.4
+                    text: "Book ID"
+                    multiline: False
+                TextInput:
+                    hint_text: "Enter Book ID (For Delete/Update)"
+                    multiline: False
+
+            GridLayout:
+                cols: 2
+                id: title_input
+                Label:
+                    size_hint_x: 0.4
+                    text: "Book Title"
+                    multiline: False
+                TextInput:
+                    hint_text: "Enter Book Title"
+                    multiline: False
+
+            GridLayout:
+                cols: 2
+                id: author_input
+                Label:
+                    size_hint_x: 0.4
+                    text: "Author"
+                    multiline: False
+                TextInput:
+                    hint_text: "Enter Author"
+                    multiline: False
+            GridLayout:
+                cols: 2
+                id: genre_input
+                Label:
+                    size_hint_x: 0.4
+                    text: "Genre"
+                    multiline: False   
+
+                TextInput:
+                    hint_text: "Enter Genre"
+                    multiline: False
+
+            GridLayout:
+                cols: 2
+                id: year_input
+                Label:
+                    size_hint_x: 0.4
+                    text: "Published Year"
+                    multiline: False   
+
+                TextInput:
+                    hint_text: "Enter Published Year"
+                    multiline: False
+
+            Button:
+                text: "Submit"
+                on_release: root.process_hidden_input()
+
+        # Data Display
+        ScrollView:
+            do_scroll:(False, True) # 가로 스크롤 비활성화, 세로 스크롤 활성화
+            
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint_y: None
+                height: self.minimum_height # 자식 요소의 높이에 따라 BoxLayout 높이 설정
+                
+                Label:
+                    id: data_display
+                    text: "Table data will be displayed here." 
+                    halign: 'left'
+                    valign: 'top'
+                    text_size: self.width, None # 텍스트가 label 너비에 맞도록 설정
+                    size_hint_y: None
+                    height: self.texture_size[1] # 텍스트 크기에 따라 label 높이 자동 설정
+            
+                Label:
+                    text: "Last Update: "
+                    color: 1, 0, 0, 1  
+                    halign: 'left'
+                    valign: 'top'
+                    text_size: self.width, None
+                    size_hint_y: None
+                    height: self.texture_size[1]
+
+                Label:
+                    id: update_text
+                    text: ""
+                    color: 1, 0, 0, 1  
+                    halign: 'left'
+                    valign: 'top'
+                    text_size: self.width, None
+                    size_hint_y: None
+                    height: self.texture_size[1]
