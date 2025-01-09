@@ -34,9 +34,8 @@ Library DB Manager is a Python application that provides a graphical interface f
 
 ### Steps
 1. Clone the repository:
-
 ```bash
-git clone https://github.com/<your-username>/library_db_manager.git
+git clone https://github.com/seohyeoning/library_db_manager.git
 cd library_db_manager
 ```
 
@@ -50,11 +49,13 @@ CREATE TABLE books (
     author VARCHAR(255),
     genre VARCHAR(100),
     published_year INT
-); ```
+);
+ ```
 
 3. Run the app:
 ```bash
-python main.py```
+python main.py
+```
 
 ---
 
