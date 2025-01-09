@@ -3,7 +3,33 @@
 Library DB Manager is a Python application that provides a graphical interface for managing a library database. The app is built using [Kivy](https://kivy.org/) for the GUI and [MySQL](https://www.mysql.com/) as the database backend.
 
 ---
+---
+## Screenshots
 
+<table>
+<tr>
+    <td align="center">
+        <h3>Home Screen</h3>
+        <img src="./Image/dbhome.PNG" width="300" height="300"/>
+    </td>
+    <td align="center">
+        <h3>Insert Operation</h3>
+        <img src="./Image/dbinsert.PNG" width="300" height="300"/>
+    </td>
+</tr>
+<tr>
+    <td align="center">
+        <h3>Update Operation</h3>
+        <img src="./Image/dbupdate.PNG" width="300" height="300"/>
+    </td>
+    <td align="center">
+        <h3>Delete Operation</h3>
+        <img src="./Image/dbdelete.PNG" width="300" height="300"/>
+    </td>
+</tr>
+</table>
+
+---
 ## Features
 
 - **CRUD Operations**: Perform Create, Read, Update, and Delete operations on the `books` table.
@@ -70,28 +96,3 @@ python main.py
 - Enter the details and click Submit.
 - Use Load Data to verify the new record.
 
----
-## Screenshots
-
-<table>
-<tr>
-    <td align="center">
-        <h3>Home Screen</h3>
-        <img src="./Image/dbhome.PNG" width="300" height="300"/>
-    </td>
-    <td align="center">
-        <h3>Insert Operation</h3>
-        <img src="./Image/dbinsert.PNG" width="300" height="300"/>
-    </td>
-</tr>
-<tr>
-    <td align="center">
-        <h3>Update Operation</h3>
-        <img src="./Image/dbupdate.PNG" width="300" height="300"/>
-    </td>
-    <td align="center">
-        <h3>Delete Operation</h3>
-        <img src="./Image/dbdelete.PNG" width="300" height="300"/>
-    </td>
-</tr>
-</table>
