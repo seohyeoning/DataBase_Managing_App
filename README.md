@@ -73,10 +73,10 @@ python main.py
 ---
 ## Screenshots
 ### Home Screen
-<img src="./dbhome.png", height="100x", width="100px">
+<img src="./Image/dbhome.png", height="100x", width="100px">
 ### Insert Operation
-<img src="./dbinsert.png", height="100x", width="100px">
+<img src="./Image/dbinsert.png", height="100x", width="100px">
 ### Update Operation
-<img src="./dbupdate.png", height="100x", width="100px">
+<img src="./Image/dbupdate.png", height="100x", width="100px">
 ### Delete Operation
-<img src="./dbdelete.png", height="100x", width="100px">
+<img src="./Image/dbdelete.png", height="100x", width="100px">
