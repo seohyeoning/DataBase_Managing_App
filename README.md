@@ -37,7 +37,8 @@ Library DB Manager is a Python application that provides a graphical interface f
 
 ```bash
 git clone https://github.com/<your-username>/library_db_manager.git
-cd library_db_manager ```
+cd library_db_manager
+```
 
 2. Set up the database:
 Create a library_db database in MySQL.
