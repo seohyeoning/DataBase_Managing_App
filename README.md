@@ -3,7 +3,6 @@
 Library DB Manager is a Python application that provides a graphical interface for managing a library database. The app is built using [Kivy](https://kivy.org/) for the GUI and [MySQL](https://www.mysql.com/) as the database backend.
 
 ---
----
 ## Screenshots
 
 <table>
