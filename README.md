@@ -73,26 +73,25 @@ python main.py
 ---
 ## Screenshots
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-
-<div style="flex: 1; text-align: center;">
-    <h3>Home Screen</h3>
-    <img src="./Image/dbhome.PNG" width="300" height="300"/>
-</div>
-
-<div style="flex: 1; text-align: center;">
-    <h3>Insert Operation</h3>
-    <img src="./Image/dbinsert.PNG" width="300" height="300"/>
-</div>
-
-<div style="flex: 1; text-align: center;">
-    <h3>Update Operation</h3>
-    <img src="./Image/dbupdate.PNG" width="300" height="300"/>
-</div>
-
-<div style="flex: 1; text-align: center;">
-    <h3>Delete Operation</h3>
-    <img src="./Image/dbdelete.PNG" width="300" height="300"/>
-</div>
-
-</div>
+<table>
+<tr>
+    <td align="center">
+        <h3>Home Screen</h3>
+        <img src="./Image/dbhome.PNG" width="300" height="300"/>
+    </td>
+    <td align="center">
+        <h3>Insert Operation</h3>
+        <img src="./Image/dbinsert.PNG" width="300" height="300"/>
+    </td>
+</tr>
+<tr>
+    <td align="center">
+        <h3>Update Operation</h3>
+        <img src="./Image/dbupdate.PNG" width="300" height="300"/>
+    </td>
+    <td align="center">
+        <h3>Delete Operation</h3>
+        <img src="./Image/dbdelete.PNG" width="300" height="300"/>
+    </td>
+</tr>
+</table>
