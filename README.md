@@ -71,12 +71,28 @@ python main.py
 - Use Load Data to verify the new record.
 
 ---
-## Screenshots 
-### Home Screen
-<img src="./Image/dbhome.PNG" width="400" height="300"/>
-### Insert Operation
-<img src="./Image/dbinsert.PNG" width="400" height="500"/>
-### Update Operation
-<img src="./Image/dbupdate.PNG" width="400" height="500"/>
-### Delete Operation
-<img src="./Image/dbdelete.PNG" width="400" height="500"/>
+## Screenshots
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+<div style="flex: 1; text-align: center;">
+    <h3>Home Screen</h3>
+    <img src="./Image/dbhome.PNG" width="300" height="300"/>
+</div>
+
+<div style="flex: 1; text-align: center;">
+    <h3>Insert Operation</h3>
+    <img src="./Image/dbinsert.PNG" width="300" height="300"/>
+</div>
+
+<div style="flex: 1; text-align: center;">
+    <h3>Update Operation</h3>
+    <img src="./Image/dbupdate.PNG" width="300" height="300"/>
+</div>
+
+<div style="flex: 1; text-align: center;">
+    <h3>Delete Operation</h3>
+    <img src="./Image/dbdelete.PNG" width="300" height="300"/>
+</div>
+
+</div>
