@@ -1,9 +1,10 @@
-# Library DB Manager
+# Library DB Manager 📚
 
 Library DB Manager is a Python application that provides a graphical interface for managing a library database. The app is built using [Kivy](https://kivy.org/) for the GUI and [MySQL](https://www.mysql.com/) as the database backend.
 
+---
 
-## Screenshots
+## Screenshots 📷
 
 <table>
 <tr>
@@ -28,8 +29,9 @@ Library DB Manager is a Python application that provides a graphical interface f
 </tr>
 </table>
 
+---
 
-## Features
+## Features ✨
 
 - **CRUD Operations**: Perform Create, Read, Update, and Delete operations on the `books` table.
 - **Dynamic GUI**: Interactive fields toggle based on the selected operation.
@@ -38,15 +40,17 @@ Library DB Manager is a Python application that provides a graphical interface f
 
 ---
 
-## Technologies Used
+## Technologies Used 💻
 
 - **Python**: Core programming language.
 - **Kivy**: For building the graphical user interface.
 - **MySQL**: Database to store and manage library data.
 - **Kivy Animation**: For smooth transitions in the app.
 
+---
 
-### Prerequisites
+## Prerequisites ⚙️
+
 1. Python 3.7 or later installed on your machine.
 2. MySQL installed and configured.
 3. Required Python libraries:
@@ -80,7 +84,30 @@ CREATE TABLE books (
 python main.py
 ```
 
-## Usage
+## Steps 🛠️
+1. Clone the repository:
+```bash
+git clone https://github.com/seohyeoning/library_db_manager.git
+cd library_db_manage
+```
+2. Set up the database:
+- Create a ```library_db``` database in MySQL.
+- Run the following SQL to create the ```books``` table:
+```bash
+    CREATE TABLE books (
+        book_id INT AUTO_INCREMENT PRIMARY KEY,
+        title VARCHAR(255) NOT NULL,
+        author VARCHAR(255),
+        genre VARCHAR(100),
+        published_year INT
+    );
+```
+3. Run the app:
+```bash
+    python main.py
+```
+
+## Usage 🧩
 ### Operations
 - Load Data: Fetch and display all records from the database.
 - Insert: Add new book details to the database.
@@ -90,4 +117,8 @@ python main.py
 - Click Insert to toggle input fields for adding a book.
 - Enter the details and click Submit.
 - Use Load Data to verify the new record.
+
+## LICENSE 📝
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for more details. 
+</details>
 
