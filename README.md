@@ -59,7 +59,7 @@ Library DB Manager is a Python application that provides a graphical interface f
    pip install mysql-connector-python
    
 
-### Steps
+### Steps 🛠️
 1. Clone the repository:
 ```bash
 git clone https://github.com/seohyeoning/library_db_manager.git
